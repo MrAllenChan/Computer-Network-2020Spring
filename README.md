@@ -1,2 +1,3 @@
 # Computer-Network-2020Spring
-Assignments and Programming of Computer Network course.
+
+Programmings and Assignments of the Computer Network course from Johns Hopkins.
