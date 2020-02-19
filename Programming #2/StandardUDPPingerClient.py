@@ -5,7 +5,7 @@ import sys
 # arguments check
 if (len(sys.argv) != 3):
     print("Wrong input of arguments! Please use: ")
-    print("UDPPingClient.py server_host server_port")
+    print("StandardUDPPingerClient.py server_host server_port")
     sys.exit()
 
 # Preparing the socket
