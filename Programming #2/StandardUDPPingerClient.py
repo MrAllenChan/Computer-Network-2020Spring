@@ -36,7 +36,7 @@ for i in range(1, 11):
     except:
         print("Request timed out\n")
 
-print(rtt_records)
+# print(rtt_records)
 print("Maximum RTT: %.6fs" % max(rtt_records))
 print("Minimum RTT: %.6fs" % min(rtt_records))
 print("Average RTT: %.6fs" % (sum(rtt_records) / len(rtt_records)))
