@@ -82,7 +82,8 @@ while True:
                 proxy_to_remote_socket.connect((remote_host, 80))
                 print('New socket successfully connected to the remote host with port 80 . . .')
 
-                get_request = 'GET /' + origin_file_url + ' HTTP/1.0\r\n\r\n'
+                get_request = 'GET /' + origin_file_url + ' HTTP/1.0\r\n' + \
+                              'Host: ' + remote_host + '\r\n\r\n'
                 print("Get request: " + get_request)
                 proxy_to_remote_socket.send(get_request.encode())
 
