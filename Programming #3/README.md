@@ -1,6 +1,6 @@
 # Programming 3
 
-## Socket Programming Assignment 3: Http Proxy Server
+## Programming Assignment 3: Http Proxy Server
 
 In this assignment, you will create a proxy cache server. Instead of connecting to the destination, the client will connect to your proxy server and ask for the resource. Your server will check if it has locally cached the demanded resource. If so, it should directly return it to the client. If not, the server will ask for the resource on the client's behalf, cache it locally, then return it to the client.
 
