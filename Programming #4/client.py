@@ -114,13 +114,10 @@ def ping(host, timeout=1):
     print("Pinging " + dest + " using Python:")
 
     # Send ping requests to a server separated by approximately one second
-
-    # loss = 0
     for i in range(10):
         ret = doOnePing(dest, timeout)
         if (ret == "Request timed out."):
             print("Request timed out.")
-            # loss += 1
         else:
             # get information from ret
             length = ret[0]
@@ -129,12 +126,10 @@ def ping(host, timeout=1):
             ttl = ret[3]
             rtt = int(ret[4] * 1000)
             print('%d bytes from %s: icmp_seq=%d ttl=%d time=%.3fms' % (length, saddr, seq, ttl, rtt))
-            # print("Received from " + dest + ": byte(s)=" + str(bytes) + " delay=" + str(delay) + "ms TTL=" + str(ttl))
+
         time.sleep(1)  # one second
-    # print("Packet: sent = " + str(4) + " received = " + str(4-loss) + " lost = " + str(loss))
 
     return
-
 
 if len(sys.argv) != 2:
     print("Usage: sudo python client.py hostname")
