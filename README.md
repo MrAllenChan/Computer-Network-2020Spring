@@ -1,3 +1,3 @@
-# Computer-Network-2020Spring
+# Computer Network CS614 - Johns Hopkins University
 
-Programmings and Assignments of the Computer Network course from Johns Hopkins.
+My programming solutions for JHU Computer Network course.
